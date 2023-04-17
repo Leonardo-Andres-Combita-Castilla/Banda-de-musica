@@ -5,59 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Banda</title>
+    <link rel="stylesheet" href="banda.css">    
 </head>
 
 <body>
-    
-    <form action="">
-        <label for="1nombre">Nombres</label>
-        <input type="text" name="1nombre" id="1nombre" placeholder="Andy Juanito"> <br> <br>
-        <label for="1apellidos">Apellidos</label>
-        <input type="text" name="1apellidos" id="1apellidos" placeholder="Ramirez Perez"> <br> <br>
-        <label for="1correo">Correo</label>
-        <input type="email" name="1correo" id="1correo" placeholder="abcde@gmail.com"> <br> <br>
-        <button type="submit">Enviar</button>
-    </form>
 
-    <h1>Soda Stereo</h1>    
-    <img src="img/Soda Stereo 1.jpg" alt="SodaStereo">    
-    <p>Soda Stereo es una banda argentina del Rock alternativo formada en Buenos Aires en 1982 por 
-        Gustavo Cerati (voz y guitarra), Zeta Bosio (bajo) y Charly Alberti (batería),1​considerada ampliamente por la 
-        crítica especializada como la banda más importante, popular e influyente de rock en español de todos los tiempos y
-        una leyenda de la música latinoamericana. 2​ Fueron el primer grupo de habla hispana en conseguir un éxito masivo
-        en Latinoamérica y tuvieron un papel muy importante en el desarrollo y la difusión del rock latinoamericano y el 
-        rock en español durante las décadas de 1980 y 1990. Durante su carrera, fueron vanguardistas y marcaron tendencia 
-        en Latinoamérica, en la que protagonizaron diversos géneros como la música divertida de sus inicios, la new wave,
-        el dark wave, el hard rock, el rock alternativo y el rock electrónico de sus finales.</p>
-
-    <h2>INTEGRANTES</h2>
+    <header>
+        <img src="img/Soda Stereo 1.jpg" alt="SodaStereo">
+        <h1>Soda Stereo</h1>   
         <ul>
-            <a href="https://es.wikipedia.org/wiki/Gustavo_Cerati"><li>Gustavo Cerati</li></a>
-            <img src="img/Gustavo Cerati.jpg" alt="Gustavo Cerati" width="200" height="200">
-            <p>Gustavo Adrián Cerati (Barracas, Buenos Aires, 11 de agosto de 1959-Núñez, Buenos Aires, 4 de septiembre de 2014), 
-            conocido como Gustavo Cerati, fue un músico, cantautor y productor discográfico argentino que obtuvo reconocimiento 
-            internacional por haber sido el líder, vocalista, compositor y guitarrista de la banda de rock Soda Stereo. Parte de 
-            la prensa especializada y músicos lo consideran como uno de los artistas más influyentes del rock latinoamericano.</p>
-                
-            <a href="https://es.wikipedia.org/wiki/Zeta_Bosio"><li>Zeta Bosio</li></a>
-            <img src="img/Zeta Bosio.jpg" alt="Zeta Bosio" width="200" height="250">
-            <p>Héctor Pedro Juan Bosio (San Fernando, 1 de octubre de 1958), más conocido como Zeta Bosio, es un músico de rock, 
-            productor discográfico y DJ argentino. Fue el bajista de la mítica e influyente banda de rock en español Soda Stereo, 
-            debido a esto, es considerado uno de los músicos más importantes de rock latino y en español, junto con sus 
-            ex-compañeros de banda Gustavo Cerati y Charly Alberti. Entre fines de 2013 y abril de 2014 fue el bajista de la 
-            banda chilena La Ley.1​ Actualmente es miembro, líder y figura de la banda Shoot The Radio, banda que fundó en 2015 
-            junto a Fernando Montemuro.</p>
+            <li><a href="#informacion">INFORMACION</a></li>            
+            <li><a href="#album">ALBUM</a></li>
+            <li>
+                <a href="#integrantes">INTEGRANTES</a>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+        </ul>        
+    </header>
+    
+    <div id="informacion">          
+        <h2>INFORMACION</h2>
+        <p>Soda Stereo es una banda argentina del Rock alternativo formada en Buenos Aires en 1982 por 
+            Gustavo Cerati (voz y guitarra), Zeta Bosio (bajo) y Charly Alberti (batería),1 considerada ampliamente por la 
+            crítica especializada como la banda más importante, popular e influyente de rock en español de todos los tiempos y
+            una leyenda de la música latinoamericana. 2 Fueron el primer grupo de habla hispana en conseguir un éxito masivo
+            en Latinoamérica y tuvieron un papel muy importante en el desarrollo y la difusión del rock latinoamericano y el 
+            rock en español durante las décadas de 1980 y 1990. Durante su carrera, fueron vanguardistas y marcaron tendencia 
+            en Latinoamérica, en la que protagonizaron diversos géneros como la música divertida de sus inicios, la new wave,
+            el dark wave, el hard rock, el rock alternativo y el rock electrónico de sus finales.
+        </p>
+    </div>
 
-            <a href="https://es.wikipedia.org/wiki/Charly_Alberti"><li>Charly Alberti</li></a>
-            <img src="img/Charly Alberti.jpg" alt="Charly Alberti" width="250" height="200">
-            <p>Carlos Alberto Ficicchia (Buenos Aires, 27 de marzo de 1963), más conocido como Charly Alberti, es un músico de rock argentino, 
-            hijo del baterista de jazz y música caribeña Tito Alberti. Fue baterista de la banda de rock Soda Stereo y es líder y 
-            baterista del grupo musical Mole. Actualmente, es activista de la protección del medio ambiente, embajador ONU y 
-            fundador del grupo ambientalista R21 para una Latinoamérica Sustentable.</p>    
-        </ul>
+    <article id="integrantes">        
+        <h2>INTEGRANTES</h2>
+                   
+            <section id="integrantes__gustavo">                    
+                <img src="img/Gustavo Cerati.jpg" alt="Gustavo Cerati" >
+                <div>
+                    <h4>
+                        <a href="https://es.wikipedia.org/wiki/Gustavo_Cerati">
+                            Gustavo Cerati
+                        </a>
+                    </h4>
+                    <p>Gustavo Adrián Cerati (Barracas, Buenos Aires, 11 de agosto de 1959-Núñez, Buenos Aires, 4 de septiembre de 2014), 
+                        conocido como Gustavo Cerati, fue un músico, cantautor y productor discográfico argentino que obtuvo reconocimiento 
+                        internacional por haber sido el líder, vocalista, compositor y guitarrista de la banda de rock Soda Stereo. Parte de 
+                        la prensa especializada y músicos lo consideran como uno de los artistas más influyentes del rock latinoamericano.
+                    </p>
+                </div>       
+            </section>
 
-    <h2>Álbum: Ruido Blanco</h2>
+            <section id="integrantes__zeta">
+                <img src="img/Zeta Bosio.jpg" alt="Zeta Bosio">
+                <div>
+                    <h4>                
+                        <a href="https://es.wikipedia.org/wiki/Zeta_Bosio">
+                        Zeta Bosio
+                        </a>
+                    </h4>
+                    <p>Héctor Pedro Juan Bosio (San Fernando, 1 de octubre de 1958), más conocido como Zeta Bosio, es un músico de rock, 
+                        productor discográfico y DJ argentino. Fue el bajista de la mítica e influyente banda de rock en español Soda Stereo, 
+                        debido a esto, es considerado uno de los músicos más importantes de rock latino y en español, junto con sus 
+                        ex-compañeros de banda Gustavo Cerati y Charly Alberti. Entre fines de 2013 y abril de 2014 fue el bajista de la 
+                        banda chilena La Ley.1 Actualmente es miembro, líder y figura de la banda Shoot The Radio, banda que fundó en 2015 
+                        junto a Fernando Montemuro.
+                    </p>
+                </div>
+            </section>
+
+            <section id="integrantes__charly">
+                <img src="img/Charly Alberti.jpg" alt="Charly Alberti">
+                <div>
+                    <h4>
+                        <a href="https://es.wikipedia.org/wiki/Charly_Alberti">
+                            Charly Alberti
+                        </a>
+                    </h4>
+                    <p>Carlos Alberto Ficicchia (Buenos Aires, 27 de marzo de 1963), más conocido como Charly Alberti, es un músico de rock argentino, 
+                        hijo del baterista de jazz y música caribeña Tito Alberti. Fue baterista de la banda de rock Soda Stereo y es líder y 
+                        baterista del grupo musical Mole. Actualmente, es activista de la protección del medio ambiente, embajador ONU y 
+                        fundador del grupo ambientalista R21 para una Latinoamérica Sustentable.
+                    </p> 
+                </div> 
+            </section>  
             
+    </article>
+
+    <article>
+    <h2 id="album">Álbum: Ruido Blanco</h2>            
         <a href="https://music.youtube.com/playlist?list=OLAK5uy_kJ3u6HIJZQkGWjKTNYC0K89TK-BNSWvPw"><img src="img/Album Ruido Blanco.jpg" alt="Album Ruido blanco" width="200" height="200"></a>
         <ol>
             <li>Signos</li>
@@ -70,11 +109,24 @@
             <li>Vita-Set</li>
             <li>Prófugos</li>
         </ol> 
+    </article>
 
     <h2>Donde Escucharlos</h2>                
         <a target="_blank" href="https://www.youtube.com/channel/UC_MAancGcA0YeACrpSwokhQ">
         <img src="img/youtube.jpg" alt="Youtube de SodaStereo" width="100" height="100"></a>
         <a target="_blank" href="https://open.spotify.com/artist/7An4yvF7hDYDolN4m5zKBp"><img src="img/Spotify.jpg" alt="Soda en espotify" width="200" height="100"></a>
+
+    <form>
+        <label for="1nombre">Nombres</label>
+        <input type="text" name="1nombre" id="1nombre" placeholder="Pepito Juanito"> <br> 
+        <label for="1apellidos">Apellidos</label>
+        <input type="text" name="1apellidos" id="1apellidos" placeholder="Ramirez Perez"> <br> 
+        <label for="1correo">Correo</label>
+        <input type="email" name="1correo" id="1correo" placeholder="abcde@gmail.com"> <br> 
+        <button type="submit">Enviar</button>
+    </form>
+           
+
 </body>
 
 <footer>

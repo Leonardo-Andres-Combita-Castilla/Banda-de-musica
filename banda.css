@@ -1,0 +1,73 @@
+
+
+
+header {  
+   font-size: 40px;
+   color: rgb(236, 235, 136);
+   margin-top: 0px;
+   display: flex; 
+   background-color: rgb(2, 39, 44); 
+}
+
+header ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;     
+}
+
+header ul, li {
+   font-size: 25px;
+   float: left;
+   display: block;
+   padding: 5px; 
+   border-right: 1px rgb(255, 255, 255)
+}
+
+header img {
+   max-width: 20%;
+   padding: 10px;
+}
+
+#informacion {
+   color: rgb(0, 0, 0);
+   text-align: justify;
+   padding: 15px;
+   margin-top: 15px;
+}
+
+#informacion h2 {
+   text-align: center;
+}
+
+#integrantes {
+   background-color: rgb(2, 39, 44);
+   color: rgb(250, 250, 250);
+}
+
+#integrantes h2 {
+   text-align: center;
+   margin: 10px;
+   font-style: italic;
+   font-size: 50px;
+}
+
+#integrantes__gustavo, #integrantes__zeta, #integrantes__charly  {
+   display: flex;
+   margin: 15px;
+}
+
+#integrantes__gustavo img, #integrantes__zeta img, #integrantes__charly img {
+   width: 25%;
+   margin: 10px;
+}
+
+#integrantes__gustavo div, #integrantes__zeta div, #integrantes__charly div {
+   text-align: justify;
+   font-size: 20px;
+   margin: 10px;
+}
+
+#integrantes__gustavo div h4, #integrantes__zeta div h4, #integrantes__charly div h4 {
+   text-align: center;
+   font-size: 50px;
+}
